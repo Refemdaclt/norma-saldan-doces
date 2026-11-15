@@ -27,9 +27,10 @@
 </div>
 <iframe id="site" title="Prévia do site Norma Saldan Doces Finos" allow="clipboard-write"></iframe>
 <script>
-  var blueprint = new URL('blueprint.json', location.href).href;
+  // ?t= evita que o navegador use um blueprint antigo guardado em cache.
+  var blueprint = new URL('blueprint.json?t=' + Date.now(), location.href).href;
   document.getElementById('site').src =
-    'https://playground.wordpress.net/?mode=seamless&blueprint-url=' + encodeURIComponent(blueprint);
+    'https://playground.wordpress.net/?mode=seamless&login=no&blueprint-url=' + encodeURIComponent(blueprint);
 </script>
 </body>
 </html>
