@@ -1,0 +1,19 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"meta": {
+		"title": "Norma Saldan Doces Finos (prévia)",
+		"description": "Prévia do site da Norma Saldan Doces Finos: cardápio com carrinho e pedido pelo WhatsApp.",
+		"author": "Refemdaclt"
+	},
+	"landingPage": "/",
+	"preferredVersions": { "php": "8.3", "wp": "latest" },
+	"steps": [
+		{
+			"step": "importWordPressFiles",
+			"wordPressFilesZip": {
+				"resource": "url",
+				"url": "https://refemdaclt.github.io/norma-saldan-doces/site.zip"
+			}
+		}
+	]
+}
